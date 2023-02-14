@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jack N Poy</title>
+</head>
+<body>
+    <div>
+        <h1>Jack N' Poy</h1>
+    </div>
+    <div class="container">
+        <div class="choices">
+            <div class="btnContainer">
+                <button onclick="playGame('Rock'); postimagefive('rocks.png');">
+                    <img src="rocks.png" alt="">
+                </button>
+                <button onclick="playGame('Paper'); postimagefive('paper.png');">
+                    <img src="paper.png" alt="">
+                </button>
+                <button onclick="playGame('Scissors'); postimagefive('scissor.png');">
+                    <img src="scissor.png" alt="">
+                </button>
+            </div>
+            <div class="btnContainer">
+                <button style="box-shadow: 0 0 15px red;">
+                    <img src="rocks.png" style="transform: scaleX(-1);" alt="">
+                </button>
+                <button style="box-shadow: 0 0 15px red;">
+                    <img src="paper.png" style="transform: scaleX(-1);" alt="">
+                </button>
+                <button style="box-shadow: 0 0 15px red;">
+                    <img src="scissor.png" style="transform: scaleX(-1);" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="you">
+            <h1>Y</h1>
+            <h1>O</h1>
+            <h1>U</h1>
+        </div>
+        <div class="theComputer">
+            <h1>C</h1>
+            <h1>O</h1>
+            <h1>M</h1>
+            <h1>P</h1>
+            <h1>U</h1>
+            <h1>T</h1>
+            <h1>E</h1>
+            <h1>R</h1>
+        </div>
+        <div class="youWinLose">
+            <h2 id="winLoseContainer"></h2>
+        </div>
+        <div class="result">
+            <div id="imgContainer"></div>
+            <div class="loader"></div>
+        </div>
+        <div class="result two">
+            <div id="imgContainertwo"></div>
+            <div class="loader loadTwo"></div>
+        </div>
+        <div class="score">
+            <h3>Score</h3>
+            <div class="insideScore">
+                <div class="vertical"></div>
+                <div class="theScore">
+                    <p id="yourScore">0</p>
+                    <p id="computerScore">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="linkHistory">
+            <a href="#" id="playHistory">History</a>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modalContent">
+                <div class="modalHeading">
+                    <h2>You</h2>
+                    <h2>Computer</h2>
+                </div>
+                <hr>
+                <br>
+                <div class="scoreHistory">
+                    <div id="yourScoreHistory">
+                        <p></p>
+                    </div>
+                    <div id="computerScoreHistory">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="restart">
+                    <button id="restartTheGame">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
